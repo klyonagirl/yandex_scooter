@@ -1,8 +1,10 @@
-headers = {
+# Заголовки для HTTP-запроса, указывающие на то, что тело запроса будет в формате JSON
+headers = { 
     "Content-Type": "application/json"
 }
 
-order_body = {
+# Данные для создания нового заказа в системе
+order_body = { 
     "firstName": "Naruto",
     "lastName": "Uchiha",
     "address": "Konoha, 142 apt.",

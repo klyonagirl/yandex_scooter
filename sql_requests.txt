@@ -1,5 +1,6 @@
 # Задание 1
 - SELECT c.login, COUNT(o."courierId") AS orders_in_delivery FROM "Couriers" c LEFT JOIN "Orders" o ON c.id = o."courierId" AND o."inDelivery" = true GROUP BY c.id, c.login ORDER BY c.login;
+Примечание: Был выбран именно LEFT JOIN для того, чтобы отобразить всех курьеров, даже тех у кого на данный момент нет заказов в доставке
 
 # Задание 2
 - SELECT 
